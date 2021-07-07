@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Html.ActionLink("Images", "readAll", "image");
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="text-center">
+    <form enctype="multipart/form-data" action="image/upload" method="post">
+        <label>Fichier: </label>
+        <input name="file" id="file" type="file" />
+        <button type="submit">Ajouter</button>
+    </form>
+</div>
